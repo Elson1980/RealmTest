@@ -1,1 +1,8 @@
-{}
+{
+    "name": {
+        "ref": "#/relationship/mongodb-atlas/Apex/tasks",
+        "source_key": "name",
+        "foreign_key": "userName",
+        "is_list": false
+    }
+}

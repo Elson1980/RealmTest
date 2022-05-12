@@ -1,0 +1,21 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "item_content": {
+            "bsonType": "string"
+        },
+        "item_name": {
+            "bsonType": "string"
+        },
+        "preferences": {
+            "bsonType": "object",
+            "properties": {}
+        },
+        "userName": {
+            "bsonType": "string"
+        }
+    },
+    "title": "items"
+}
