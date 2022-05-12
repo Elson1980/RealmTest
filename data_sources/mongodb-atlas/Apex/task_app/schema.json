@@ -1,5 +1,8 @@
 {
     "properties": {
+        "RealmUser": {
+            "bsonType": "objectId"
+        },
         "_id": {
             "bsonType": "objectId"
         },
@@ -17,5 +20,8 @@
             "properties": {}
         }
     },
+    "required": [
+        "RealmUser"
+    ],
     "title": "user"
 }
