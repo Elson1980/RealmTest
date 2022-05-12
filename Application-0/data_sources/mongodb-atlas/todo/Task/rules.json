@@ -1,9 +1,9 @@
 {
-    "collection": "Task",
-    "database": "todo",
+    "collection": "Apex",
+    "database": "UserApp",
     "roles": [
         {
-            "name": "owner",
+            "name": "Users",
             "apply_when": {
                 "%%root._partition": "%%user.id"
             },
@@ -12,15 +12,39 @@
                     "write": true,
                     "read": true
                 },
-                "_partition": {
+                "_username": {
                     "write": true,
                     "read": true
                 },
-                "isComplete": {
+                "password": {
+                    "write": true,
+                    "read": true
+                }
+            },
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        },
+        {
+            "name": "items",
+            "apply_when": {
+                "%%root._partition": "%%user.id"
+            },
+            "fields": {
+                "_id": {
                     "write": true,
                     "read": true
                 },
-                "summary": {
+                "_itemName": {
+                    "write": true,
+                    "read": true
+                },
+                "itemContent": {
+                    "write": true,
+                    "read": true
+                },
+                "userId": {
                     "write": true,
                     "read": true
                 }
